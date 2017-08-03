@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Index</title>
+        <script>
+            function vibrate(){
+                alert("click ok to vibrate");
+                var successBool = window.navigator.vibrate(100);
+                if(successBool){
+                    alert("It's working!" + successBool);
+                }else{
+                    alert("Vibration is not supported on your device");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="vibrate()">Vibrate</button>
+    </body>
+</html>
